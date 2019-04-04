@@ -24,7 +24,7 @@ public class SignUpPresenter implements ISignUp {
         this.context=context;
         firebaseAuth=FirebaseAuth.getInstance();
         firebaseDatabase=FirebaseDatabase.getInstance();
-        userRef=firebaseDatabase.getReference().child("users").push();
+        userRef=firebaseDatabase.getReference().child("users");
     }
 
 
@@ -57,8 +57,8 @@ public class SignUpPresenter implements ISignUp {
     @Override
     public void addUserToFireBaseDatabase(String mail, String password, final ProgressDialog progressDialog) {
 
-        userRef.child("mail").setValue(mail);
-        userRef.child("password").setValue(password).addOnCompleteListener(new OnCompleteListener<Void>() {
+        userRef.child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("mail").setValue(mail);
+        userRef.child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("password").setValue(password).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
             public void onComplete(@NonNull Task<Void> task) {
                 progressDialog.dismiss();

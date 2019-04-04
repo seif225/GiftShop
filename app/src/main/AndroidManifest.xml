@@ -8,8 +8,9 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".SignUpPack.SignUpActivity"></activity>
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".Adminstration.AdminActivity"></activity>
+        <activity android:name=".SignUpPack.SignUpActivity" />
         <activity android:name=".PhoneLoginPack.PhoneLoginActivity" />
         <activity android:name=".MailLoginPack.MailLoginActivity" />
         <activity android:name=".GoogleLoginPack.GoogleLoginActivity" />

@@ -14,6 +14,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.example.giftshop.Adminstration.AdminActivity;
 import com.example.giftshop.SplashPack.SplashActivity;
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.FirebaseAuth;
@@ -114,9 +115,12 @@ public class MainActivity extends AppCompatActivity
     protected void onStart() {
         super.onStart();
         if(firebaseAuth.getCurrentUser()==null){
-
             sendUserToSplash();
-
+        }
+        else if (FirebaseAuth.getInstance().getCurrentUser().getUid().equals("kAX91C9KjKWMser05rzIE6Jq3RJ3")){
+            Intent i = new Intent(this, AdminActivity.class);
+            i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(i);
 
         }
     }

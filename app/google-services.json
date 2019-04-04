@@ -21,6 +21,14 @@
             "package_name": "com.example.giftshop",
             "certificate_hash": "d4203024f032b479a470d8d655245548307512a9"
           }
+        },
+        {
+          "client_id": "662167942752-orue4gsbmopougt73suvjma8jtiasumv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.giftshop",
+            "certificate_hash": "ff4a2f5ddfea71da282247f6a9cb9903f2bfebe7"
+          }
         }
       ],
       "api_key": [

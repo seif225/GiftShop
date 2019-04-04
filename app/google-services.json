@@ -1,0 +1,44 @@
+{
+  "project_info": {
+    "project_number": "662167942752",
+    "firebase_url": "https://giftshop-e68f3.firebaseio.com",
+    "project_id": "giftshop-e68f3",
+    "storage_bucket": "giftshop-e68f3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:662167942752:android:b0272e1f1aa0363e",
+        "android_client_info": {
+          "package_name": "com.example.giftshop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "662167942752-1lvipt60v2nfsfakfu3ank0quqhdcnrj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.giftshop",
+            "certificate_hash": "d4203024f032b479a470d8d655245548307512a9"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjkieGHXALxwO_BznnE9BLM8zpR8R7s_o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "662167942752-tkeollsbrvtj53nthpfmsir84599g2r2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

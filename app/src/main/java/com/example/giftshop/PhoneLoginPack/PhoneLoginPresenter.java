@@ -60,7 +60,6 @@ public class PhoneLoginPresenter {
 
         mAuth=FirebaseAuth.getInstance();
         Log.e("constractor","sssssssss");
-
     }
      void createCredential(String code){
         Log.e("credential",id+"  "+code);

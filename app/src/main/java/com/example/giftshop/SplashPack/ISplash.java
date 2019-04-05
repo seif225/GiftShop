@@ -4,7 +4,6 @@ public interface ISplash {
 
     void sendUserToPhoneLoginActivity();
     void sendUserToMailLogin();
-    void sendUserToGoogleLogin();
     void sendUserToSignUpActivity();
 
 

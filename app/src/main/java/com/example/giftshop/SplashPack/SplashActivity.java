@@ -76,7 +76,7 @@ public class SplashActivity extends AppCompatActivity {
     phoneButton=findViewById(R.id.splash_phone_login);
     signUpButton=findViewById(R.id.splash_sign_up);
         gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-                .requestIdToken("662167942752-orue4gsbmopougt73suvjma8jtiasumv.apps.googleusercontent.com")
+                .requestIdToken("662167942752-tkeollsbrvtj53nthpfmsir84599g2r2.apps.googleusercontent.com")
                 .requestEmail()
                 .build();
     }

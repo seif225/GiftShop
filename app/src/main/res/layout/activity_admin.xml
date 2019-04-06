@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<android.support.v4.widget.NestedScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Adminstration.AdminActivity">
+    tools:context=".Adminstration.AdminActivity"
+    >
+<android.support.constraint.ConstraintLayout
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+   >
 
 
 
@@ -275,3 +280,4 @@
         app:layout_constraintVertical_bias="0.138" />
 
 </android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>

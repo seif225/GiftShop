@@ -62,6 +62,7 @@ public class SplashPresenter implements  ISplash {
                             // Sign in success, update UI with the signed-in user's information
                             Log.e("Splash Presenter", "signInWithCredential:success");
                             enterToHome();
+
                         } else {
                             // If sign in fails, display a message to the user.
                             Log.e("Splash Presenter", "signInWithCredential:failure", task.getException());
@@ -74,7 +75,7 @@ public class SplashPresenter implements  ISplash {
 
     public static void enterToHome(){
         Intent i=new Intent(context, MainActivity.class);
-        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK| Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK| Intent.FLAG_ACTIVITY_NEW_TASK);
         context.startActivity(i);
 
     }

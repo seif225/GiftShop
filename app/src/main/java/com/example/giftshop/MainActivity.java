@@ -18,10 +18,13 @@ import com.example.giftshop.Adminstration.AdminActivity;
 import com.example.giftshop.SplashPack.SplashActivity;
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+    DatabaseReference databaseReference;
     FirebaseAuth firebaseAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -122,6 +125,12 @@ public class MainActivity extends AppCompatActivity
             i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(i);
 
+        }
+        else{
+            databaseReference=FirebaseDatabase.getInstance().getReference().child("users")
+                    .child(firebaseAuth.getCurrentUser().getUid())
+                    .child("id");
+            databaseReference.setValue(firebaseAuth.getCurrentUser().getUid());
         }
     }
 

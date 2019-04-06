@@ -1,5 +1,6 @@
 package com.example.giftshop.PhoneLoginPack;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
@@ -20,7 +21,7 @@ import java.util.concurrent.TimeUnit;
 public class PhoneLoginActivity extends AppCompatActivity {
  private    EditText phoneNum;
     private CountryCodePicker code;
-    private static Context context;
+    private Context context;
    private Button signUp;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

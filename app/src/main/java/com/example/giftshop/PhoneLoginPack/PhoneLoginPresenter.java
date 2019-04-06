@@ -51,6 +51,7 @@ public class PhoneLoginPresenter {
             Log.e("PhoneLoginPresenter", "onCodeSent:" + verificationId);
             id=verificationId;
             Intent i=new Intent(context,VerificationCode.class);
+            i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
             context.startActivity(i);
 
             // ...

@@ -83,13 +83,14 @@ public class SplashPresenter implements  ISplash {
     public void sendUserToPhoneLoginActivity() {
 
         Intent intent = new Intent(context, PhoneLoginActivity.class);
-
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
         context.startActivity(intent);
     }
 
     @Override
     public void sendUserToMailLogin() {
         Intent intent = new Intent(context, MailLoginActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
 
         context.startActivity(intent);
 
@@ -101,7 +102,7 @@ public class SplashPresenter implements  ISplash {
     public void sendUserToSignUpActivity() {
 
         Intent intent = new Intent(context, SignUpActivity.class);
-
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
         context.startActivity(intent);
 
 
